@@ -1,0 +1,293 @@
+// variable
+$bg-main: #F7F8FC;
+$sidebar-bg: #363740;
+$text-primary: #252733;
+$text-secondary: #9FA2B4;
+$text-light: #A4A6B3;
+$border: #DFE0EB;
+$blue: #3751FF;
+$main-font: "Mulish", sans-serif;
+
+// body
+body {
+    background-color: $bg-main;
+    font-family: $main-font;
+}
+
+// sidebar
+.sidebar {
+    background: $sidebar-bg;
+    min-height: 100vh;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+}
+
+.sidebar-title {
+    font-size: 19px;
+    color: $text-light;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    padding-left: 8px;
+}
+
+.nav-link {
+    color: $text-light;
+    padding: 16px 8px;
+    border-left: 3px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+
+    &:hover:not(.active), &.active {
+        background: #9FA2B414;
+        color: #DDE2FF;
+        border-left: 3px solid #DDE2FF;
+    }
+}
+
+
+// top nav
+.page-title {
+    color: $text-primary;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-left: 40px;
+}
+
+.username {
+    color: $text-primary;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+// cards
+.card-top {
+    border: 1px solid $border;
+    border-radius: 16px;
+}
+
+.card-title {
+    color: $text-secondary;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+h4 {
+    color: $text-primary;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+&:hover {
+    border-color: $blue;
+
+    .card-title, h4 {
+      color: $blue; 
+    }
+}
+
+
+// graph
+.grapg-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: $text-primary;
+}
+
+.grapg-date {
+    color: $text-secondary;
+    font-size: 12px;
+}
+
+.legend-line {
+    display: inline-block;
+    width: 16px;
+    height: 2px;
+    margin-right: 6px;
+
+  &.blue { 
+    background: $blue;
+    }
+  &.gray { 
+    background: $border; 
+    }
+}
+
+.grapg-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.graph-label {
+    color: $text-secondary;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.graph-number {
+    color: $text-primary;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+// bottom
+.group-text {
+    color: $text-secondary;
+    font-size: 12px;
+}
+
+.support {
+    color: $text-primary;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.list-leble {
+    color: $text-primary;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+// task
+.task-subtitle {
+    color: $text-secondary;
+    font-size: 14px;
+}
+
+.task-link {
+    color: $blue;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.task-create-text {
+    color: #C5C7CD;
+    font-size: 14px;
+}
+
+.task-plus-btn {
+    width: 24px;
+    height: 24px;
+    background: #F0F1F7;
+    color: $text-secondary;
+    font-size: 18px;
+    border: none;
+}
+
+.task-text {
+    color: $text-primary;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.task-check {
+    width: 20px;
+    height: 20px;
+
+    &:checked {
+        background-color: $blue;
+        border-color: $blue;
+    }
+}
+
+.task-badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 12px;
+    text-transform: uppercase;
+
+    &.badge-urgent {
+        background-color: #FEC400;
+        color: white;
+    }
+
+    &.badge-new {
+        background-color: #29CC97;
+        color: white;
+    }
+
+    &.badge-default {
+        background-color: #F0F1F7;
+        color: $text-secondary;
+    }
+}
+
+// mobile
+@media screen and (max-width: 600px) {
+.page-title {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.top-actions {
+    gap: 10px;
+}
+
+.username {
+    display: none;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+}
+
+.card-top {
+    .card-body { 
+        padding: 16px;
+    }
+    .card-title {
+        font-size: 16px;
+    }
+    h4 {
+        font-size: 28px;
+    }
+}
+
+.grapg-title { 
+    font-size: 16px; }
+
+.grapg-date { 
+    font-size: 11px; }
+
+.small-legend {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.graph-number { 
+    font-size: 20px; 
+}
+
+.list-group-item {
+    padding: 16px;
+}
+
+.card-title-bottom {
+    font-size: 16px;
+}
+
+.list-leble, .task-text {
+    font-size: 13px;
+}
+
+.task-badge {
+    font-size: 10px;
+    padding: 4px 8px;
+}
+
+.task-create-text {
+    font-size: 13px;
+}
+
+.task-plus-btn {
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+}}

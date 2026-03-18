@@ -1,0 +1,366 @@
+body {
+  background-color: #F7F8FC;
+}
+
+/* side nav */
+.sidebar-title {
+  font-family: "Mulish", sans-serif;
+  font-size: 19px;
+  color: #A4A6B3;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.4px;
+  padding-left: 8px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+.sidebar {
+  background: #363740;
+  min-height: 100vh;
+}
+
+.sidebar .nav-link {
+  color: #a4a6b3;
+  padding: 16px 8px;
+  border-left: 3px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Mulish", sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.sidebar .nav-link:not(.active):hover {
+  background: #9FA2B414;
+  color: #DDE2FF;
+  border-left: 3px solid #DDE2FF;
+}
+
+.sidebar .nav-link.active {
+  background: #9FA2B414;
+  color: #DDE2FF;
+  border-left: 3px solid #DDE2FF;
+}
+
+/* main */
+/* top nav */
+.page-title {
+  color: #252733;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.3px;
+  font-weight: 700;
+  font-family: "Mulish", sans-serif;
+  margin-left: 40px;
+}
+
+.username {
+  color: #252733;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  font-family: "Mulish", sans-serif;
+}
+
+.card .card-top {
+  border: 1px solid #9FA2B4;
+  border-radius: 16px;
+}
+
+.card-top .card-title {
+  color: #9FA2B4;
+  font-size: 19px;
+  font-weight: 700;
+  font-family: "Mulish", sans-serif;
+  line-height: 100%;
+  letter-spacing: 0.4px;
+}
+
+.card-top h4 {
+  color: #252733;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+.card-top:hover {
+  border: 1px solid #3751FF;
+}
+
+.card-top:hover .card-title, .card-top:hover h4 {
+  color: #3751FF;
+}
+
+/* graph */
+.grapg-title .card-title-bottom {
+  color: #252733;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.4px;
+}
+
+.grapg-date{
+  color: #9FA2B4;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+}
+
+.legend-line {
+  display: inline-block;
+  width: 16px;
+  height: 2px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.legend-line.blue {
+  background: #3751FF;
+}
+
+.legend-line.gray {
+  background: #DFE0EB;
+}
+
+.grapg-img{
+  max-width:100%;
+  height:auto;
+}
+
+.graph-label {
+  font-family: "Mulish", sans-serif;
+  color: #9FA2B4;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+}
+
+.graph-number {
+  font-family: "Mulish", sans-serif;
+  color: #252733;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.3px;
+}
+
+.group-text {
+  font-family: "Mulish", sans-serif;
+  color: #9FA2B4;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+}
+
+/* card bottom  */
+/* unresolved tickets */
+.support {
+  font-family: "Mulish", sans-serif;
+  color: #252733;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.1px;
+}
+
+.create {
+  font-family: "Mulish", sans-serif;
+  color: #C5C7CD;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+/* list */
+.list-leble {
+  font-family: "Mulish", sans-serif;
+  color: #252733;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+/* task */
+.task-subtitle {
+  color: #9FA2B4;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  font-family: "Mulish", sans-serif;
+}
+
+.task-link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  font-family: "Mulish", sans-serif;
+  color: #3751FF;
+}
+
+.task-create-text {
+  color: #C5C7CD;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  font-family: "Mulish", sans-serif;
+}
+
+.task-plus-btn {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: #F0F1F7;
+  color: #9FA2B4;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* task list */
+.task-text {
+  color: #252733;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  font-family: "Mulish", sans-serif;
+}
+
+.task-check {
+  width: 20px;
+  height: 20px;
+}
+
+.task-check:checked {
+  background-color: #3751FF;
+  border-color: #3751FF;
+}
+
+.task-badge {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 11px;
+  letter-spacing: 0.5px;
+  line-height: 100%;
+  padding: 5px 12px;
+  font-family: "Mulish", sans-serif;
+  text-transform: uppercase;
+}
+
+.badge-urgent {
+  background-color: #FEC400;
+  color: #FFFFFF;
+}
+
+.badge-new {
+  background-color: #29CC97;
+  color: #FFFFFF;
+}
+
+.badge-default {
+  background-color: #F0F1F7;
+  color: #9FA2B4;
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+/* title */
+.page-title {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+/* top bar */
+.top-actions {
+   gap: 10px;
+}
+
+/* hide username*/
+.username {
+  display: none;
+}
+
+/* avatar */
+.avatar {
+  width: 36px;
+  height: 36px;
+}
+
+/* cards top */
+.card-top .card-body {
+  padding: 16px;
+}
+
+.card-top .card-title {
+  font-size: 16px;
+}
+
+.card-top h4 {
+  font-size: 28px;
+}
+
+/* graph */
+.grapg-title {
+  font-size: 16px;
+}
+
+.grapg-date {
+  font-size: 11px;
+}
+
+.small-legend {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.graph-number {
+  font-size: 20px;
+}
+
+/* right side stats */
+.list-group-item {
+  padding: 16px;
+}
+
+/* card bottom */
+.card-title-bottom {
+  font-size: 16px;
+}
+
+.list-leble, .task-text {
+  font-size: 13px;
+}
+
+/* task badge */
+.task-badge {
+  font-size: 10px;
+  padding: 4px 8px;
+}
+
+/* create task */
+.task-create-text {
+  font-size: 13px;
+}
+
+.task-plus-btn {
+  width: 22px;
+  height: 22px;
+  font-size: 14px;
+}}
