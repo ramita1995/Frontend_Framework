@@ -69,6 +69,15 @@ body {
 .card-top {
     border: 1px solid $border;
     border-radius: 16px;
+
+    &:hover {
+        border-color: $blue;
+
+        .card-title,
+        h4 {
+            color: $blue;
+        }
+    }
 }
 
 .card-title {
@@ -83,15 +92,6 @@ h4 {
     font-weight: 700;
     margin-bottom: 0;
 }
-
-&:hover {
-    border-color: $blue;
-
-    .card-title, h4 {
-      color: $blue; 
-    }
-}
-
 
 // graph
 .grapg-title {
